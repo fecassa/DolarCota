@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/dollars.ico">
-    <title>Dólar Cota</title>
+    <title>Dólar Cota - Cotação do dólar</title>
+    <meta name="description"
+        content="Cotações do dólar em tempo real. Dados obtidos diretamente de serviços de dados do Banco Central do Brasil">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFM4DDX6TZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RFM4DDX6TZ');
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -64,7 +75,7 @@
                     }
                     else {
                         document.getElementById("dolar").innerHTML = cotacaoD0.value[0].cotacaoVenda;
-                        document.getElementById("log").innerHTML = cotacaoD0.value[0].dataHoraCotacao;
+                        document.getElementById("log").innerHTML = "Fechamento de " + cotacaoD0.value[0].dataHoraCotacao;
                     }
                 }
             })

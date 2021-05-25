@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 html{
+    color: #212529;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,7 +31,7 @@ html{
 }
 
 .simbolo{
-    color: gray;
+    color: #737373;
     font-size: 2em;
     font-weight: 600;    
 }
@@ -38,6 +39,10 @@ html{
 h1{
     font-size: 4em;    
     font-variant: small-caps;    
+}
+
+.logo{
+    width: 7%;
 }
 
 .center{
