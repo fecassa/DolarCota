@@ -20,67 +20,7 @@
         gtag('config', 'G-RFM4DDX6TZ');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            var result;
-            var cotacaoD0 = {};
-
-            var dataInicial = new Date();
-
-            var diaDaSemana = dataInicial.getDate();
-
-            if (diaDaSemana == 6) {
-                dataInicial = dataInicial.setDate(dataInicial.getDate() - 1);
-                dataInicial = new Date(dataInicial);
-            }
-            if (diaDaSemana == 7) {
-                dataInicial = dataInicial.setDate(dataInicial.getDate() - 2);
-                dataInicial = new Date(dataInicial);
-            }
-
-
-            var dia = ("0" + (dataInicial.getDate())).slice(-2);
-            var mes = ("0" + (dataInicial.getMonth() + 1)).slice(-2);
-            var ano = dataInicial.getFullYear();
-
-            var dataIncialQueryString = "'" + mes + "-" + dia + "-" + ano + "'";
-
-            $.ajax({
-                url: "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?%40dataCotacao=" + dataIncialQueryString + "&%24format=json",
-                contentType: "application/json",
-                dataType: 'json',
-                success: function (data) {
-                    cotacaoD0 = data;
-                    if (cotacaoD0.value == '') {
-                        alert('fernando');
-                        dataInicial = dataInicial.setDate(dataInicial.getDate() - 1);
-                        dataInicial = new Date(dataInicial);
-                        dia = ("0" + (dataInicial.getDate())).slice(-2);
-                        mes = ("0" + (dataInicial.getMonth() + 1)).slice(-2);
-                        ano = dataInicial.getFullYear();
-
-                        dataIncialQueryString = "'" + mes + "-" + dia + "-" + ano + "'";
-
-                        $.ajax({
-                            url: "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?%40dataCotacao=" + dataIncialQueryString + "&%24format=json",
-                            contentType: "application/json",
-                            dataType: 'json',
-                            success: function (data) {
-                                cotacaoD0 = data;
-                                document.getElementById("dolar").innerHTML = cotacaoD0.value[0].cotacaoVenda;
-                                document.getElementById("log").innerHTML = cotacaoD0.value[0].dataHoraCotacao;
-                            }
-                        })
-                    }
-                    else {
-                        document.getElementById("dolar").innerHTML = cotacaoD0.value[0].cotacaoVenda;
-                        document.getElementById("log").innerHTML = "Fechamento de " + cotacaoD0.value[0].dataHoraCotacao;
-                    }
-                }
-            })
-        })
-    </script>
+    <script src="dolarcota.js"></script>
 </head>
 
 <body>
