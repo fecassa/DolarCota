@@ -1,0 +1,65 @@
+{
+    "@odata.context": "https://was-p.bcnet.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata$metadata#_CotacaoDolarPeriodo",
+    "value": [
+        {
+            "cotacaoCompra": 5.23970,
+            "cotacaoVenda": 5.24030,
+            "dataHoraCotacao": "2021-05-11 13:07:53.048"
+        },
+        {
+            "cotacaoCompra": 5.23470,
+            "cotacaoVenda": 5.23530,
+            "dataHoraCotacao": "2021-05-12 13:05:50.389"
+        },
+        {
+            "cotacaoCompra": 5.28090,
+            "cotacaoVenda": 5.28150,
+            "dataHoraCotacao": "2021-05-13 13:03:00.191"
+        },
+        {
+            "cotacaoCompra": 5.26950,
+            "cotacaoVenda": 5.27010,
+            "dataHoraCotacao": "2021-05-14 13:03:03.149"
+        },
+        {
+            "cotacaoCompra": 5.27490,
+            "cotacaoVenda": 5.27550,
+            "dataHoraCotacao": "2021-05-17 13:07:28.963"
+        },
+        {
+            "cotacaoCompra": 5.25820,
+            "cotacaoVenda": 5.25880,
+            "dataHoraCotacao": "2021-05-18 13:06:44.978"
+        },
+        {
+            "cotacaoCompra": 5.28160,
+            "cotacaoVenda": 5.28220,
+            "dataHoraCotacao": "2021-05-19 13:10:26.529"
+        },
+        {
+            "cotacaoCompra": 5.28990,
+            "cotacaoVenda": 5.29050,
+            "dataHoraCotacao": "2021-05-20 13:06:37.39"
+        },
+        {
+            "cotacaoCompra": 5.30210,
+            "cotacaoVenda": 5.30270,
+            "dataHoraCotacao": "2021-05-21 13:11:21.274"
+        },
+        {
+            "cotacaoCompra": 5.31920,
+            "cotacaoVenda": 5.31980,
+            "dataHoraCotacao": "2021-05-24 13:07:26.965"
+        },
+        {
+            "cotacaoCompra": 5.31370,
+            "cotacaoVenda": 5.31430,
+            "dataHoraCotacao": "2021-05-25 13:09:30.329"
+        },
+        {
+            "cotacaoCompra": 5.31580,
+            "cotacaoVenda": 5.31640,
+            "dataHoraCotacao": "2021-05-26 13:05:31.717"
+        }
+    ]
+}

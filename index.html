@@ -12,6 +12,9 @@
         content="Cotações do dólar em tempo real. Dados obtidos diretamente de serviços de dados do Banco Central do Brasil">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFM4DDX6TZ"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dolarcota.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -19,8 +22,6 @@
 
         gtag('config', 'G-RFM4DDX6TZ');
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="dolarcota.js"></script>
 </head>
 
 <body>
@@ -47,10 +48,10 @@
             </div>
         </div>
     </div>
-    <div class="row center">
-        <span id="log"></span>
-    </div>
 
+    <div class="row center d-flex mt-2">
+        <div id='chart_div'></div>
+    </div>
 </body>
 
 </html>
